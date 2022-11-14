@@ -1,0 +1,11 @@
+<div role="tr" class="tableRow" #container>
+  <app-default-cell-renderer
+    *ngFor="let colDef of rowData?.columnDefinations; let i = index"
+    [colIndex]="i"
+    [ColDef]="colDef"
+    [rowId]="rowData?.id!"
+    [rowIndex]="rowIndex"
+    [cellValue]="rowData?.data?.[colDef.id!]"
+    [tabIndex]="rowIndex * numCols + (i + 1)"
+  ></app-default-cell-renderer>
+</div>

@@ -1,0 +1,14 @@
+.tableRow{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height:var(--default-row-height);
+}
+
+:host{
+    height:100%;
+    width:100%;
+    border-color: inherit;
+}
+

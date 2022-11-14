@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;    
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.cell{
+    padding:6px 12px;
+    text-overflow: ellipsis;
+    border:var(--border-width) solid var(--border-color);
+    word-break: break-all;
+}
+
+:root {
+  --min-cell-width: 150px;
+  --border-color: #ccc;
+  --border-width: 0.5px;
+  --header-background-color:#eee;
+  --default-row-height:32px;
+}

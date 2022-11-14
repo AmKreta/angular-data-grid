@@ -1,0 +1,26 @@
+<div role="tbody" class="tableBody" #tableBody>
+  <ng-container *ngIf="renderableRows.length===0;">
+    <app-table-body-row
+      *ngFor="let data of tableData; let index = index"
+      [rowData]="{
+        columnDefinations,
+        data
+    }"
+      [rowIndex]="index"
+      [numCols]="numCols"
+    ></app-table-body-row>
+  </ng-container>
+  
+  <ng-container *ngIf="renderableRows.length > 0">
+    <app-table-body-row
+    *ngFor="let data of renderableRows; let index = index"
+    [rowData]="{
+      columnDefinations,
+      data
+    }"
+    [rowIndex]="index"
+    [numCols]="numCols"
+    [top]="rowHeightTillNow[renderableRowStartIndex+index-1]"
+  ></app-table-body-row>
+  </ng-container>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+    <div role="table" class="table">
+        <!-- <caption>amk</caption> -->
+        <app-table-header 
+            [columnDefinations]="columnDefinations"
+        ></app-table-header>
+
+        <app-table-body 
+            [columnDefinations]="columnDefinations"
+            [defaultColumnDefination]="defaultColumnDefination"
+            [tableData]="tableData"
+        ></app-table-body>  
+        
+        <app-table-header 
+        [columnDefinations]="columnDefinations"
+    ></app-table-header>
+        <tfoot>
+    
+        </tfoot>
+    </div>
+</div>

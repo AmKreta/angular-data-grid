@@ -1,0 +1,7 @@
+<div class="tableRow" role="tr">
+  <app-default-table-header-cell-renderer
+    *ngFor="let colDef of columnDefinations; let index = index"
+    [columnDefination]="colDef"
+    [index]="index"
+  ></app-default-table-header-cell-renderer>
+</div>

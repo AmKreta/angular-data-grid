@@ -1,0 +1,22 @@
+.container{
+    height:min(100%, 100vh);
+    width:min(100%,100vw);
+    overflow: scroll;
+}
+
+.table{
+    border-collapse: collapse;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    border:var(--border-width) solid var(--border-color);
+    max-height: 100%;
+    max-width: 100%;
+    width:min-content;
+}
+
+tfoot{
+    display: table-footer-group;
+}

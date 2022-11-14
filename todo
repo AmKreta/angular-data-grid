@@ -1,0 +1,20 @@
+-------------------------------- FEATURES --------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------- What to implement on priority ----------------------------
+- check if columnDefinations have duplicate columnIds, make them unique, preferably in AGGrid's way, by appending _1 => [ file store.services.js, function set columnDefinations() ]
+- add keyboard navigation 
+- add focus and tabIndexes ability
+- add ability to use custom renderers and editors
+- add virtualization for rows and cols
