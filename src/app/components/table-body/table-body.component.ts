@@ -36,7 +36,9 @@ export class TableBodyComponent implements OnInit, AfterViewInit {
   // sum of height of previous rows + height of current row
   public rowHeightTillNow: number[] = [];
   public rowHeightTillNowIndexMap = new Map<number, number>();
-  private lastScrollPosition: number = -1;
+  // initializing with -100 to let recalculateVisibleRowRange
+  // execute for the first time
+  private lastScrollPosition: number = -100;
 
   constructor() {}
 
